@@ -1,0 +1,20 @@
+{
+  "name": "ucore-custom-image",
+  "image": "mcr.microsoft.com/devcontainers/base:debian",
+  "customizations": {
+  },
+  "containerUser": "vscode",
+  "remoteUser": "vscode",
+  "forwardPorts": [8080, 8443],
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "installOhMyZsh": true,
+      "configureZshAsDefaultShell": true,
+      "upgradePackages": true
+    },
+    "ghcr.io/devcontainers-extra/features/cosign:1": {
+
+    }
+  },
+}
