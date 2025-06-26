@@ -11,6 +11,7 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=tmpfs,dst=/tmp \
     /ctx/build.sh && \
     ostree container commit
-    
+
+COPY --from=1password/op:2 /usr/local/bin/op /usr/local/bin/op
 # Verify final image and contents are correct.
 RUN bootc container lint
