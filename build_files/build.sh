@@ -19,4 +19,5 @@ dnf5 install -y 1password-cli zsh vim tuned tuned-ppd tuned-profiles-atomic
 echo "export EDITOR=vim" > /etc/profile.d/zz-default-editor.sh
 
 # simple file to signify we've been installed
+mkdir /etc/ucore-autorebase
 touch /etc/ucore-autorebase/musical-giggle
