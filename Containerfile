@@ -15,7 +15,7 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     ostree container commit
 
 # ncurses in 42 is from early 2025, and doesn't have ghostty yet
-RUN --mount=type=bind,from,ctx,source=/,target=/ctx \
+RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     tic -x /ctx/infocmp-xterm-ghostty
 
 # Verify final image and contents are correct.
