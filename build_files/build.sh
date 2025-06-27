@@ -12,4 +12,5 @@ set -ouex pipefail
 # 1password repo setup
 rpm --import https://downloads.1password.com/linux/keys/1password.asc
 
-dnf5 install -y 1password-cli just powerstat step-cli step-ca tuned tuned-ppd tuned-profiles-atomic vim zsh
+dnf5 copr enable atim/starship
+dnf5 install -y 1password-cli just powerstat starship step-cli step-ca tuned tuned-ppd tuned-profiles-atomic vim zsh
