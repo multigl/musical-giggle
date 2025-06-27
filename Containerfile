@@ -5,6 +5,8 @@ COPY build_files /
 # Base Image
 FROM ghcr.io/ublue-os/ucore-hci:stable
 
+COPY system_files/etc /etc
+
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=cache,dst=/var/cache \
     --mount=type=cache,dst=/var/log \
