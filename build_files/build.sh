@@ -13,7 +13,16 @@ set -ouex pipefail
 rpm --import https://downloads.1password.com/linux/keys/1password.asc
 
 dnf5 copr -y enable atim/starship
-dnf5 install -y 1password-cli just powerstat starship step-cli step-ca tuned tuned-ppd tuned-profiles-atomic vim zsh
-
-# install brew
-NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+dnf5 install -y \
+  1password-cli \
+  just \
+  powerstat \
+  starship \
+  step-cli \
+  step-ca \
+  tuned \
+  tuned-ppd \
+  tuned-profiles-atomic \
+  ublue-brew \
+  vim \
+  zsh
