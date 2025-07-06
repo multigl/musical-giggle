@@ -1,0 +1,14 @@
+polkit.addRule(function(action, subject) {
+    if ((action.id == "org.freedesktop.login1.power-off" ||
+         action.id == "org.freedesktop.login1.power-off-multiple-sessions" ||
+         action.id == "org.freedesktop.login1.reboot" ||
+         action.id == "org.freedesktop.login1.reboot-multiple-sessions" ||
+         action.id == "org.freedesktop.login1.suspend" ||
+         action.id == "org.freedesktop.login1.suspend-multiple-sessions")) {
+        if (subject.isInGroup("sudo")) {
+            return polkit.Result.YES;
+        } else {
+            return polkit.Result.AUTH_ADMIN;
+        }
+    }
+});
