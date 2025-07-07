@@ -8,6 +8,8 @@ Create a tailored uCore image with the following items I always use:
 
 ## Packages
 * 1password cli
+* cerbot (for cockpit acme certs)
+  * rfc2136 plugin
 * just
 * powerstat
 * starship

@@ -15,6 +15,8 @@ rpm --import https://downloads.1password.com/linux/keys/1password.asc
 dnf5 copr -y enable atim/starship
 dnf5 install -y \
   1password-cli \
+  certbot \
+  python3-certbot-dns-rfc2136 \
   just \
   powerstat \
   starship \
