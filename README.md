@@ -11,6 +11,7 @@ Create a tailored uCore image with the following items I always use:
 * cerbot (for cockpit acme certs)
   * rfc2136 plugin
 * just
+* nss-tools
 * powerstat
 * starship
 * step-cli & step-ca

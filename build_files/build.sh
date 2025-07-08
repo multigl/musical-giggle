@@ -17,6 +17,7 @@ dnf5 install -y \
   1password-cli \
   certbot \
   python3-certbot-dns-rfc2136 \
+  nss-tools \
   just \
   powerstat \
   starship \
