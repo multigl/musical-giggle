@@ -43,8 +43,8 @@ jobs:
           echo "IMAGE_NAME=${IMAGE_NAME,,}" >> ${GITHUB_ENV}
 
       # This is optional, but if you see that your builds are way too big for the runners, you can enable this by uncommenting the following lines:
-      - name: Maximize build space
-        uses: ublue-os/remove-unwanted-software@v9 # v9
+      # - name: Maximize build space
+      #  uses: ublue-os/remove-unwanted-software@v9 # v9
 
       # These stage versions are pinned by https://github.com/renovatebot/renovate
       - name: Checkout
