@@ -26,6 +26,5 @@ dnf5 install -y \
   tuned \
   tuned-ppd \
   tuned-profiles-atomic \
-  ublue-brew \
   vim \
   zsh
