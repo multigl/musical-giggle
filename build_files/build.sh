@@ -16,10 +16,13 @@ dnf5 copr -y enable atim/starship
 dnf5 install -y \
   1password-cli \
   certbot \
-  python3-certbot-dns-rfc2136 \
   nss-tools \
   just \
+  pkgconfig \
   powerstat \
+  python3-devel \
+  mysql-devel \
+  python3-certbot-dns-rfc2136 \
   starship \
   step-cli \
   step-ca \
