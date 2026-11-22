@@ -23,8 +23,7 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=cache,dst=/var/cache \
     --mount=type=cache,dst=/var/log \
     --mount=type=tmpfs,dst=/tmp \
-    /ctx/build.sh && \
-    ostree container commit
+    /ctx/build.sh
 
 # Copy Homebrew files from the brew image
 # And enable
